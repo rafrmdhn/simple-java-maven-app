@@ -31,7 +31,6 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
                 input message: 'Sudah selesai menggunakan Java App? (Klik "Proceed" untuk mengakhiri)'
                 sh 'sleep 1m'
-                sh 'pkill java'
             }
         }
     }
